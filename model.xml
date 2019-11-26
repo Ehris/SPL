@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<featureModel>
+	<properties>
+		<graphics key="showhiddenfeatures" value="true"/>
+		<graphics key="legendautolayout" value="true"/>
+		<graphics key="showshortnames" value="false"/>
+		<graphics key="layout" value="horizontal"/>
+		<graphics key="showcollapsedconstraints" value="true"/>
+		<graphics key="legendhidden" value="false"/>
+		<graphics key="layoutalgorithm" value="1"/>
+	</properties>
+	<struct>
+		<and abstract="true" mandatory="true" name="calculator">
+			<and abstract="true" mandatory="true" name="calculate">
+				<feature name="extended"/>
+				<and abstract="true" mandatory="true" name="Basic">
+					<feature name="add"/>
+					<feature name="sub"/>
+					<feature name="mult"/>
+					<feature name="div"/>
+				</and>
+			</and>
+			<feature name="save"/>
+			<feature name="load"/>
+			<and name="log">
+				<feature name="display"/>
+				<feature name="select"/>
+			</and>
+			<alt mandatory="true" name="Interface">
+				<feature name="german"/>
+				<feature name="english"/>
+			</alt>
+			<and name="Graphs">
+				<feature name="plot"/>
+				<feature name="show"/>
+			</and>
+		</and>
+	</struct>
+</featureModel>
