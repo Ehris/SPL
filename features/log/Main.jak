@@ -1,0 +1,19 @@
+/**
+ * TODO description
+ */
+import java.uti.*;
+import java.util.LinkedList;
+
+public class Main {
+	
+	public LinkedList<String> calculations = new LinkedList<String>();
+
+	public static void main(String[] args){
+		new Main().log(calculation);
+	}
+	
+	public void log(String calculation){
+		log.add(calculation);
+	}
+
+}
