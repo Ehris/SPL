@@ -12,19 +12,21 @@
 	<struct>
 		<and abstract="true" mandatory="true" name="calculator">
 			<and abstract="true" mandatory="true" name="calculate">
-				<feature name="extended"/>
+				<and abstract="true" name="extended">
+					<feature name="convert"/>
+				</and>
 				<and abstract="true" mandatory="true" name="Basic">
-					<feature name="add"/>
-					<feature name="sub"/>
-					<feature name="mult"/>
-					<feature name="div"/>
+					<feature mandatory="true" name="add"/>
+					<feature mandatory="true" name="sub"/>
+					<feature mandatory="true" name="mult"/>
+					<feature mandatory="true" name="div"/>
 				</and>
 			</and>
 			<feature name="save"/>
-			<feature name="load"/>
 			<and name="log">
-				<feature name="display"/>
-				<feature name="select"/>
+				<and name="display">
+					<feature name="select"/>
+				</and>
 			</and>
 			<alt mandatory="true" name="Interface">
 				<feature name="german"/>
