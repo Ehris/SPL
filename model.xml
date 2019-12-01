@@ -34,7 +34,7 @@
 			</alt>
 			<and name="Graphs">
 				<feature name="plot"/>
-				<feature name="show"/>
+				<feature name="calculate_point"/>
 			</and>
 		</and>
 	</struct>
